@@ -9,6 +9,13 @@ export default {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
@@ -16,5 +23,7 @@ export default {
         },
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
