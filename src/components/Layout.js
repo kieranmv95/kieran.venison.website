@@ -6,6 +6,9 @@ import Header from './Header';
 import Typography from '../styles/Typography';
 
 export default function Layout({ children }) {
+  // TODO: theme provider which swiches to lite and dark respective of OS preferences
+  // TODO: Manual toggle to light theme
+
   return (
     <>
       <GlobalStyles />

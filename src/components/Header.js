@@ -44,6 +44,10 @@ export default function Header() {
     }
   `);
 
+  // TODO: Spacing around h1 tag
+  // TODO: Create link pages
+  // TODO: Take a look at current page speed metrics
+
   return (
     <HeaderStyles>
       <h1>Kieran Venison</h1>
