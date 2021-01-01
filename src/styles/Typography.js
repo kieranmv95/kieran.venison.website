@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const Typography = createGlobalStyle`
   html {
+    font-size: var(--font-base);
     font-family: 'Open Sans';
     color: var(--copy-color);
   }
