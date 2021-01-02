@@ -19,6 +19,10 @@ const HeaderStyles = styled.div`
     width: 125px;
     width: clamp(75px, 15vw, 125px);
   }
+  h1,
+  .gatsby-image-wrapper {
+    margin-bottom: 1rem;
+  }
   nav ul {
     margin: 0;
     padding: 0;
@@ -26,8 +30,15 @@ const HeaderStyles = styled.div`
     display: flex;
     justify-content: center;
   }
-  nav ul li {
-    padding: 0 0.5rem;
+  nav ul li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    @media (min-width: var(--tablet-breakpoint)) {
+      padding: 0.75rem;
+    }
   }
 `;
 
@@ -44,10 +55,6 @@ export default function Header() {
     }
   `);
 
-  // TODO: Spacing around h1 tag
-  // TODO: Create link pages
-  // TODO: Take a look at current page speed metrics
-
   return (
     <HeaderStyles>
       <h1>Kieran Venison</h1>
@@ -55,16 +62,16 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/">Uses</Link>
+            <Link to="/uses">Uses</Link>
           </li>
           <li>
-            <Link to="/">Projects</Link>
+            <Link to="/projects">Projects</Link>
           </li>
         </ul>
       </nav>

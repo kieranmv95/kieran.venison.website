@@ -1,11 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const FooterStyles = styled.footer`
+  padding: 1rem;
+  span {
+    color: var(--color-heart);
+  }
+`;
 
 export default function Footer() {
-  // TODO: Spacing
-  // TODO: Colouring
-  // TODO: Centering
-
   return (
-    <footer>Kieran Venison. {new Date().getFullYear()}, Built with ❤</footer>
+    <FooterStyles className="center">
+      Kieran Venison. {new Date().getFullYear()}, Built with <span>❤</span>
+    </FooterStyles>
   );
 }

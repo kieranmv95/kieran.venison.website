@@ -6,6 +6,8 @@ const GlobalStyles = createGlobalStyle`
     --background-color: #fdfdfd;
     --copy-color: #0e0e0e;
     --text-decoration-color: #0e0e0e;
+    --tablet-breakpoint: 768px;
+    --color-heart: #ff3737;
   }
 
   html {
