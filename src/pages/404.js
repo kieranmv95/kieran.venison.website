@@ -1,11 +1,11 @@
 import React from 'react';
 import SEO from '../components/SEO';
 
-export default function ContactPage() {
+export default function NotFound() {
   return (
     <>
-      <SEO title="Contact" />
-      Contact
+      <SEO title="Not Found" />
+      Not Found
     </>
   );
 }

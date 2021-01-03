@@ -1,5 +1,11 @@
 import React from 'react';
+import SEO from '../components/SEO';
 
 export default function Homepage() {
-  return <div>Home</div>;
+  return (
+    <>
+      <SEO title="Home" />
+      Home
+    </>
+  );
 }

@@ -1,5 +1,11 @@
 import React from 'react';
+import SEO from '../components/SEO';
 
 export default function ProjectsPage() {
-  return <div>Projects</div>;
+  return (
+    <>
+      <SEO title="Projects" />
+      Projects
+    </>
+  );
 }
