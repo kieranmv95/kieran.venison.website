@@ -37,13 +37,34 @@ As a quick example below is the HTML and CSS grid markup to create a very simple
 
 ```html
 <div class="container">
-  <div>1<div>
-  <div>2<div>
-  <div>3<div>
-  ...
-  <div>11<div>
-  <div>12<div>
-<div>
+  <div>
+    1
+    <div>
+      <div>
+        2
+        <div>
+          <div>
+            3
+            <div>
+              ...
+              <div>
+                11
+                <div>
+                  <div>
+                    12
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 ```
 
 ```scss
@@ -66,5 +87,3 @@ I no longer use frameworks and even better, the entire team I now work with is b
 I am not saying Ditch Bootstrap or any other framework you might be using. This is just to show you that with the advancements in CSS it's a lot easier to do some of the things you might be using a framework for. if you are debating switching but don't want to, create a mini project and just give it a shot, you might be surprised.
 
 Do you agree or disagree with me? I would love to hear your opinions on this. Hit me up on [twitter](https://twitter.com/kieranmv95) or [contact me here](/contact)!
-
-
