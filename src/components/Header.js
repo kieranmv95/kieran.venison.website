@@ -3,10 +3,12 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 
-const HeaderStyles = styled.div`
+const HeaderStyles = styled.header`
   padding: 2rem 0 3rem 0;
   text-align: center;
-  h1 {
+  .title {
+    display: inline-block;
+    text-decoration: none;
     font-style: italic;
     font-size: 2rem;
     font-size: clamp(1.8rem, 5vw, 2.3rem);
@@ -19,7 +21,7 @@ const HeaderStyles = styled.div`
     width: 125px;
     width: clamp(75px, 15vw, 125px);
   }
-  h1,
+  .title,
   .gatsby-image-wrapper {
     margin-bottom: 1rem;
   }
@@ -36,7 +38,7 @@ const HeaderStyles = styled.div`
     &:hover {
       text-decoration: underline;
     }
-    @media (min-width: var(--tablet-breakpoint)) {
+    @media (min-width: ${(props) => props.theme.tablet_breakpoint}) {
       padding: 0.75rem;
     }
   }
@@ -57,7 +59,9 @@ export default function Header() {
 
   return (
     <HeaderStyles>
-      <h1>Kieran Venison</h1>
+      <Link to="/" className="title">
+        Kieran Venison
+      </Link>
       <Img fluid={logo.childImageSharp.fluid} alt="kieran venison" />
       <nav>
         <ul>
