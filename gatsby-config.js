@@ -23,6 +23,21 @@ export default {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
