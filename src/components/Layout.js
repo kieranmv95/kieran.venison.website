@@ -8,6 +8,7 @@ import Typography from '../styles/Typography';
 import useTheme from '../hooks/useTheme';
 import Switch from './Switch';
 import theme from '../styles/theme';
+import ArticleStyles from '../styles/ArticleStyles';
 
 const BodyStyles = styled.div`
   min-height: calc(100vh - 2px);
@@ -37,6 +38,7 @@ export default function Layout({ children }) {
       <BodyStyles>
         <GlobalStyles />
         <Typography />
+        <ArticleStyles />
         <Header />
         <main>{children}</main>
         <div>
