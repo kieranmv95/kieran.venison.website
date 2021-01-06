@@ -11,7 +11,11 @@ const UsesBodyStyles = styled.div`
 export default function UsesPage({ data }) {
   return (
     <>
-      <SEO title="Uses" />
+      <SEO
+        title="Uses"
+        description="I change my home office somewhat frequently, this is a living page
+          that documents everything in my setup!"
+      />
       <div className="center">
         <h1>Uses</h1>
         <p>

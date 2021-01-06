@@ -5,7 +5,7 @@ export default function ProjectsPage() {
   return (
     <>
       <SEO title="Projects" />
-      Projects
+      <h1 className="center">Projects</h1>
     </>
   );
 }

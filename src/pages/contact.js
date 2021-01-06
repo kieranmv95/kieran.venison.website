@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <>
       <SEO title="Contact" />
-      Contact
+      <h1 className="center">Contact</h1>
     </>
   );
 }

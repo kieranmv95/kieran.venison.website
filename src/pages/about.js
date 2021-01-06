@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <>
       <SEO title="About" />
-      About
+      <h1 className="center">About</h1>
     </>
   );
 }
