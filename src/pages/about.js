@@ -20,7 +20,6 @@ const CareerStyles = styled.div`
 `;
 
 export default function AboutPage({ data }) {
-  console.log(data);
   return (
     <>
       <SEO
