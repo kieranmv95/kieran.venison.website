@@ -2,7 +2,6 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { createPortal } from 'react-dom';
 
 const ProjectItemStyles = styled.div`
   ${({ cursor }) => cursor && `cursor: pointer;`}
