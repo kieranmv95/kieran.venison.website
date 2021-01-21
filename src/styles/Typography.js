@@ -6,8 +6,10 @@ const Typography = createGlobalStyle`
     font-family: 'Open Sans';
     color: var(--copy-color);
   }
-  p { line-height: 1.7; }
-  p, li { letter-spacing: 0.5px; }
+  p, li {
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+  }
   h1,h2,h3,h4,h5,h6 {
     margin: 0;
     font-style: italic;
