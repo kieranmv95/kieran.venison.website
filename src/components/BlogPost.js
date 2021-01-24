@@ -6,7 +6,9 @@ const BlogStyles = styled.article`
   text-align: center;
   max-width: 720px;
   margin: 0 auto;
-  margin-bottom: 4rem;
+  &:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
   a {
     text-decoration: none;
     &:hover {
@@ -23,7 +25,7 @@ export default function BlogPost({ post }) {
 
   return (
     <BlogStyles>
-      <Link to={`blog${fields.slug}`}>
+      <Link to={`/blog${fields.slug}`}>
         <header>
           <h3>{frontmatter.title}</h3>
           <small>{frontmatter.date}</small>
