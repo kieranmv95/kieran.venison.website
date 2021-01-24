@@ -21,7 +21,7 @@ export default function BlogPostTemplate({ data: { blogPost, site } }) {
         <meta property="og:title" content={blogPost.frontmatter.title} />
         <meta property="og:type" content="website" />
         <meta
-          property="of:description"
+          property="og:description"
           content={blogPost.frontmatter.description || blogPost.excerpt}
         />
         <meta property="og:locale" content="en_GB" />
@@ -29,7 +29,19 @@ export default function BlogPostTemplate({ data: { blogPost, site } }) {
           property="og:url"
           content={`${site.siteMetadata.siteUrl}/blog${blogPost.fields.slug}`}
         />
-        <meta property="og:site_name" content="Kieran Venison" />
+        <meta name="og:image" content={thisIsMe} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="kieranvenison.co.uk" />
+        <meta
+          property="twitter:url"
+          content={`${site.siteMetadata.siteUrl}/blog${blogPost.fields.slug}`}
+        />
+        <meta name="twitter:title" content={blogPost.frontmatter.title} />
+        <meta
+          name="twitter:description"
+          content={blogPost.frontmatter.description || blogPost.excerpt}
+        />
         <meta name="twitter:image" content={thisIsMe} />
       </SEO>
       <BlogPageStyles>
