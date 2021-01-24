@@ -23,7 +23,6 @@ const NavStyles = styled.nav`
 `;
 
 export default function Pagination({ base, pages }) {
-  console.log({ base, pages });
   return (
     <NavStyles>
       <ul>

@@ -38,7 +38,6 @@ export async function createPages({ graphql, actions }) {
   const pageCount = Math.ceil(posts.length / pageSize);
 
   Array.from({ length: pageCount }).forEach((_, i) => {
-    console.log(`CREATING A PAGE FOR /blog/${i + 1}`);
     actions.createPage({
       path: `/blog/${i + 1}`,
       component: path.resolve('./src/pages/index.js'),
