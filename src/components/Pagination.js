@@ -13,21 +13,28 @@ const NavStyles = styled.nav`
     justify-content: center;
   }
 
-  ul li a {
+  ul li a,
+  ul li div {
     display: inline-block;
     padding: 0.5rem;
     @media (min-width: ${(props) => props.theme.tablet_breakpoint}) {
       padding: 0.75rem;
     }
   }
+  ul li div {
+    color: var(--copy-color-disabled);
+  }
 `;
 
-export default function Pagination({ base, pages }) {
+export default function Pagination({ base, pages, currentPage }) {
   return (
     <NavStyles>
       <ul>
         <li>
-          <Link to={`/${base}/1`}>Prev</Link>
+          {currentPage > 1 && (
+            <Link to={`/${base}/${currentPage - 1}`}>Prev</Link>
+          )}
+          {currentPage === 1 && <div>Prev</div>}
         </li>
         {Array.from({ length: pages }).map((_, i) => (
           <li>
@@ -35,7 +42,10 @@ export default function Pagination({ base, pages }) {
           </li>
         ))}
         <li>
-          <Link to={`/${base}/2`}>Next</Link>
+          {currentPage < pages && (
+            <Link to={`/${base}/${currentPage + 1}`}>Next</Link>
+          )}
+          {currentPage === pages && <div>Next</div>}
         </li>
       </ul>
     </NavStyles>

@@ -4,11 +4,9 @@ import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
 import Footer from './Footer';
 import Header from './Header';
-import Typography from '../styles/Typography';
 import useTheme from '../hooks/useTheme';
 import Switch from './Switch';
 import theme from '../styles/theme';
-import ArticleStyles from '../styles/ArticleStyles';
 
 const BodyStyles = styled.div`
   min-height: calc(100vh - 2px);
@@ -37,8 +35,6 @@ export default function Layout({ children }) {
     <ThemeProvider theme={theme[themeName]}>
       <BodyStyles>
         <GlobalStyles />
-        <Typography />
-        <ArticleStyles />
         <Header />
         <main>{children}</main>
         <div>

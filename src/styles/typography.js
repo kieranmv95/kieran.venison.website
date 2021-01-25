@@ -1,16 +1,22 @@
-import { createGlobalStyle } from 'styled-components';
+import { css } from 'styled-components';
 
-const Typography = createGlobalStyle`
+const typography = css`
   html {
     font-size: var(--font-base);
     font-family: 'Open Sans';
     color: var(--copy-color);
   }
-  p, li {
+  p,
+  li {
     letter-spacing: 0.5px;
     line-height: 1.7;
   }
-  h1,h2,h3,h4,h5,h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 0;
     font-style: italic;
   }
@@ -49,4 +55,4 @@ const Typography = createGlobalStyle`
   }
 `;
 
-export default Typography;
+export default typography;

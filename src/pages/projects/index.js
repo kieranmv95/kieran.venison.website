@@ -35,6 +35,11 @@ export default function ProjectsPage({ data }) {
           img={data.kieranVenison.childImageSharp.fluid}
           link="/projects/kieran-venison"
         />
+        <ProjectItem
+          title="Content Creation"
+          img={data.youtube.childImageSharp.fluid}
+          link="/projects/content-creation"
+        />
         <ProjectItem comingSoon title="Coming Soon" />
       </ProjectGridStyles>
     </>
@@ -53,6 +58,13 @@ export const query = graphql`
       }
     }
     kieranVenison: file(relativePath: { eq: "kieran-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 200, maxHeight: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    youtube: file(relativePath: { eq: "projects/youtube.png" }) {
       childImageSharp {
         fluid(maxWidth: 200, maxHeight: 200) {
           ...GatsbyImageSharpFluid
