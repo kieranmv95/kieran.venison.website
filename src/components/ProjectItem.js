@@ -16,6 +16,7 @@ const ProjectItemStyles = styled.div`
     display: inline-block;
     background: var(--background-color-offset);
     border-radius: 999rem;
+    overflow: hidden;
     padding: 1rem;
     position: relative;
     margin-top: 1rem;
@@ -37,6 +38,8 @@ const ProjectItemStyles = styled.div`
     `}
   }
   .gatsby-image-wrapper {
+    border-radius: 999rem;
+    overflow: hidden;
     width: 125px;
     height: 125px;
     transform: scale(1);
