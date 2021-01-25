@@ -4,7 +4,7 @@ import BlogPost from '../components/BlogPost';
 import Pagination from '../components/Pagination';
 import SEO from '../components/SEO';
 
-export default function Homepage({ data }) {
+export default function Homepage({ data, pageContext }) {
   const { posts, totalCount } = data.allMarkdownRemark;
 
   const pageSize = parseInt(process.env.GATSBY_ARTICLES_PER_PAGE);
@@ -17,7 +17,11 @@ export default function Homepage({ data }) {
         {posts.map(({ node }) => (
           <BlogPost key={node.id} post={node} />
         ))}
-        <Pagination base="blog" pages={pageCount} />
+        <Pagination
+          base="blog"
+          pages={pageCount}
+          currentPage={pageContext.currentPage || 1}
+        />
       </div>
     </>
   );
