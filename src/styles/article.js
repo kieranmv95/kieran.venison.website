@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { css } from 'styled-components';
 
-const ArticleStyles = createGlobalStyle`
+const article = css`
   .article {
     max-width: 720px;
     margin: 0 auto;
@@ -57,4 +57,4 @@ const ArticleStyles = createGlobalStyle`
   }
 `;
 
-export default ArticleStyles;
+export default article;
