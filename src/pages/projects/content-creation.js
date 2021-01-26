@@ -12,7 +12,7 @@ const ContentCreationStyles = styled.div`
 `;
 
 const VideosStyles = styled.div`
-margin-top: 3rem;
+  margin-top: 3rem;
   .video {
     @media (min-width: ${(props) => props.theme.tablet_breakpoint}) {
       text-decoration: none;
@@ -30,7 +30,7 @@ margin-top: 3rem;
     @media (min-width: ${(props) => props.theme.tablet_breakpoint}) {
       display: grid;
       grid-template-rows: auto 1fr auto;
-      height: 100%:
+      height: 100%;
     }
   }
 
