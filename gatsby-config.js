@@ -27,6 +27,13 @@ export default {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-embed-youtube`,
+            options: {
+              width: 800,
+              height: 400,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,

@@ -12,13 +12,15 @@ description: In January I dived into the content creation world. Heres some tips
 
 This year I have started my journey into the content creation world. But why?
 
-I primarily started creating content around frontend development for YouTube to help people on topics they may be stuck on and to get better at teaching. That being said I also wanted to use it as a form of documentation for things I have done in the past, a place where my guides can live. I am a very visual learner. I learn by watching videos, I always have. Theres lots of people who learn in a similar way to me. I love to read, but as soon as it comes to a technical books my brain shuts down, I find it really hard to follow. I need to see and do.
+I primarily started creating content around frontend development for YouTube to help people on topics they may be stuck on and to get better at teaching. That being said, I also wanted to use it as a form of documentation for things I have done in the past, a place where my guides can live.
+
+I am a very visual learner. I have always learned by watching videos. There are lots of people who learn in a similar way to me. I love to read, but as soon as it comes to a technical books my brain shuts down, I find it really hard to follow. I need to see and do.
 
 By creating videos I can look back and see my thought process as I create things and follow much better than reading notes from months back. If even one person happens to get any use out of these videos I consider them successful!
 
 ### The First Video
 
-The first video was actually nerve racking. I will get better with time but I was genuinely nervous. And I have talked in front of hundres of people before (I was nervous then too). I think I was more nervous recording the video!
+The first video was actually nerve racking. I will get better with time but I was genuinely nervous. And I have talked in front of hundreds of people before (I was nervous then too). I think I was more nervous recording the video!
 
 I had my predefined topic (Styled Components) and a loose bullet pointed list of what I needed to cover as I went through. It kind of looked like this:
 
@@ -44,7 +46,7 @@ The video quality was good, The audio quality was... meh, the content was (hopef
 
 ### What did I learn / Tips
 
-During and after recording I have learnt a lot about what to do going forward! But theres a hell of a lot left to learn. These are the things I realised myself or friends pointed out to me after. They might help you if you are about to step into the world of content creation!
+During and after recording I have learned a lot about what to do going forward! But there's a hell of a lot left to learn. These are the things I realised myself, or friends pointed out to me after. They might help you if you are about to step into the world of content creation!
 
 - **Just do it**. Any content is better than no content. I was tempted to not bother after the first few failed takes. I then got past that and decided whatever happens on the next one, its going live. This might sound bad but if you give up on the first hurdle, you are likely never going to continue. Having something up is better than nothing at all, it will make you strive to do better next time!
 - **Screen size / Scaling**. I recorded in 4k on a 32 inch screen. I pre-emptively scaled up the font sizes in vs code and that worked partially but it wasn't enough. It is watchable in at least HD but a friend pointed out that when possible he likes to split out a mini viewer so he can follow along whilst watching on the same screen. Next time I am going to scale up the font size more and the actual code editor itself so its easier to see the UI on a smaller screen.
@@ -55,11 +57,11 @@ During and after recording I have learnt a lot about what to do going forward! B
 
 ### Uploading / Rendering
 
-I Used iMovie to render the video once recorded. This took a whole load of time. An hour and 50 minutes to be precise, but it is a 4k, hour and fitfteen minute video after all so thats expected.
+I Used iMovie to render the video once recorded. This takes a lot of time. An hour and 50 minutes to be precise, but it is a 4k, hour and fitfteen minute video after all so thats expected.
 
 What I didnt expect was YouTube to take about 1 hour to load the SD version (which is just unusable because of the font size). About 4 hours for the HD version, and nearly **20 Hours** for the 4k version.
 
-This meant my video was live for 3 hours in SD, looking absolutely horrendous with no options to bump up the quality, You couldn't see the text clear enoguht to even follow along. Next time I am going to upload it but delay the video going live until YouTube has processed all the HD versions. This way it prevents that user experience drop of people viewing a really really low quality video and thinking that that was the complete thing.
+This meant my video was live for 3 hours in SD, looking absolutely horrendous with no options to bump up the quality, You couldn't see the text clear enough to even follow along. Next time I am going to upload it but delay the video going live until YouTube has processed all the HD versions. This way it prevents that user experience drop of people viewing a really really low quality video and thinking that that was the complete thing.
 
 ### Iteration
 
@@ -67,6 +69,8 @@ I have this large list of points to consider for next time, and no doubt it will
 
 ### Shameless plug time
 
-If you have made it this far, please check out the video this article is based on (bearing in mind its my first) <a href="https://www.youtube.com/watch?v=30F-yfcj-CE&t=133s" target="_blank" rel="noreferrer">Styled Components - How to theme your site based on OS preference</a>.
+If you have made it this far, please check out the video this article is based on (bearing in mind its my first):
 
-If you like that and want to se more, check out the channel <a href="https://www.youtube.com/channel/UCxX-3WG1vKNVJjGi2mwRziQ" target="_blank" rel="noreferrer">Channel</a>.
+`youtube:https://www.youtube.com/embed/30F-yfcj-CE`
+
+If you like that and want to se more, check out the <a href="https://www.youtube.com/channel/UCxX-3WG1vKNVJjGi2mwRziQ" target="_blank" rel="noreferrer">Channel</a>.
