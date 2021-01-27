@@ -40,7 +40,6 @@ export default function ProjectsPage({ data }) {
           img={data.youtube.childImageSharp.fluid}
           link="/projects/content-creation"
         />
-        <ProjectItem comingSoon title="Coming Soon" />
       </ProjectGridStyles>
     </>
   );
