@@ -27,6 +27,13 @@ export default {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-embed-youtube`,
+            options: {
+              width: 800,
+              height: 400,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,
@@ -47,5 +54,16 @@ export default {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-122667138-1',
+        head: false,
+        pageTransitionDelay: 0,
+        defer: false,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+      },
+    },
   ],
 };
