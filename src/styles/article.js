@@ -55,6 +55,9 @@ const article = css`
       background: var(--background-color);
     }
   }
+  iframe {
+    width: 100%;
+  }
 `;
 
 export default article;
