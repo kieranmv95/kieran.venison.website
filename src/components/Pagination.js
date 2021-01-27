@@ -37,7 +37,7 @@ export default function Pagination({ base, pages, currentPage }) {
           {currentPage === 1 && <div>Prev</div>}
         </li>
         {Array.from({ length: pages }).map((_, i) => (
-          <li>
+          <li key={i.toString()}>
             <Link to={`/${base}/${i + 1}`}>{i + 1}</Link>
           </li>
         ))}
