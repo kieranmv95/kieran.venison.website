@@ -13,7 +13,9 @@ const ContentCreationStyles = styled.div`
 
 const VideosStyles = styled.div`
   margin-top: 3rem;
-  .video {
+  display: grid;
+  grid-gap: 2rem;
+  > a {
     @media (min-width: ${(props) => props.theme.tablet_breakpoint}) {
       text-decoration: none;
       display: grid;
@@ -50,7 +52,27 @@ const VideosStyles = styled.div`
   }
 `;
 
-export default function FrontEndWizardPage({ data }) {
+function VideoThumbnail({ fluid, title, description, runtime }) {
+  return (
+    <a
+      href="https://www.youtube.com/watch?v=30F-yfcj-CE&t=3685s"
+      target="_blank"
+      rel="noreferrer"
+      className="video"
+    >
+      <div>
+        <Img fluid={fluid} alt="Styled Components thumbnail" />
+      </div>
+      <div className="video__meta">
+        <p className="video__title">{title}</p>
+        <p className="video__description">{description}</p>
+        <p className="video__runtime">Length: {runtime}</p>
+      </div>
+    </a>
+  );
+}
+
+export default function ContentCreationPage({ data }) {
   return (
     <ContentCreationStyles>
       <SEO
@@ -79,24 +101,18 @@ export default function FrontEndWizardPage({ data }) {
         <h2>Videos</h2>
         <p>Click to watch on YouTube!</p>
         <VideosStyles>
-          <a
-            href="https://www.youtube.com/watch?v=30F-yfcj-CE&t=3685s"
-            target="_blank"
-            rel="noreferrer"
-            className="video"
-          >
-            <Img
-              fluid={data.styledComponents.childImageSharp.fluid}
-              alt="Styled Components thumbnail"
-            />
-            <div className="video__meta">
-              <p className="video__title">Styled Components</p>
-              <p className="video__description">
-                How to theme your site based on user OS preference
-              </p>
-              <p className="video__runtime">Length: 1:12:22</p>
-            </div>
-          </a>
+          <VideoThumbnail
+            title="Gatsby JS Course: 1. Project Introduction"
+            description="Join me in this video series to learn the fundamentals of Gatsby"
+            runtime="2:37"
+            fluid={data.gatsbyCourse.childImageSharp.fluid}
+          />
+          <VideoThumbnail
+            title="Styled Components"
+            description="How to theme your site based on user OS preference"
+            runtime="1:12:22"
+            fluid={data.styledComponents.childImageSharp.fluid}
+          />
         </VideosStyles>
       </div>
     </ContentCreationStyles>
@@ -108,6 +124,13 @@ export const query = graphql`
     styledComponents: file(
       relativePath: { eq: "projects/StyledComponents.png" }
     ) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    gatsbyCourse: file(relativePath: { eq: "projects/project-intro.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid

@@ -58,6 +58,22 @@ const article = css`
   iframe {
     width: 100%;
   }
+
+  .article .rocket-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .article .rocket-list li {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .article .rocket-list li:before {
+    content: '🚀';
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 
 export default article;
