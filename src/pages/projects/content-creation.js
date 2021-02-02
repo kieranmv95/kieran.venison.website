@@ -52,14 +52,9 @@ const VideosStyles = styled.div`
   }
 `;
 
-function VideoThumbnail({ fluid, title, description, runtime }) {
+function VideoThumbnail({ url, fluid, title, description, runtime }) {
   return (
-    <a
-      href="https://www.youtube.com/watch?v=30F-yfcj-CE&t=3685s"
-      target="_blank"
-      rel="noreferrer"
-      className="video"
-    >
+    <a href={url} target="_blank" rel="noreferrer" className="video">
       <div>
         <Img fluid={fluid} alt="Styled Components thumbnail" />
       </div>
@@ -102,6 +97,14 @@ export default function ContentCreationPage({ data }) {
         <p>Click to watch on YouTube!</p>
         <VideosStyles>
           <VideoThumbnail
+            url="https://youtu.be/2PYvMe9XQhc"
+            title="Gatsby JS Course: 2. Project Setup"
+            description="In the second video of the Gatsby JS course we will setup our project"
+            runtime="12:06"
+            fluid={data.gatsbyCourse2.childImageSharp.fluid}
+          />
+          <VideoThumbnail
+            url="https://www.youtube.com/watch?v=F7C3IQo4HqU"
             title="Gatsby JS Course: 1. Project Introduction"
             description="Join me in this video series to learn the fundamentals of Gatsby"
             runtime="2:37"
@@ -109,6 +112,7 @@ export default function ContentCreationPage({ data }) {
           />
           <VideoThumbnail
             title="Styled Components"
+            url="https://youtu.be/30F-yfcj-CE"
             description="How to theme your site based on user OS preference"
             runtime="1:12:22"
             fluid={data.styledComponents.childImageSharp.fluid}
@@ -131,6 +135,13 @@ export const query = graphql`
       }
     }
     gatsbyCourse: file(relativePath: { eq: "projects/project-intro.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    gatsbyCourse2: file(relativePath: { eq: "projects/project-setup.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid
