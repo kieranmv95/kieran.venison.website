@@ -26,9 +26,9 @@ export default function ProjectsPage({ data }) {
       </p>
       <ProjectGridStyles>
         <ProjectItem
-          title="Front End Wizard"
-          img={data.frontEndWizard.childImageSharp.fluid}
-          link="/projects/front-end-wizard"
+          title="Content Creation"
+          img={data.youtube.childImageSharp.fluid}
+          link="/projects/content-creation"
         />
         <ProjectItem
           title="Kieran Venison"
@@ -36,9 +36,9 @@ export default function ProjectsPage({ data }) {
           link="/projects/kieran-venison"
         />
         <ProjectItem
-          title="Content Creation"
-          img={data.youtube.childImageSharp.fluid}
-          link="/projects/content-creation"
+          title="Front End Wizard"
+          img={data.frontEndWizard.childImageSharp.fluid}
+          link="/projects/front-end-wizard"
         />
       </ProjectGridStyles>
     </>
