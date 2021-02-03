@@ -97,6 +97,13 @@ export default function ContentCreationPage({ data }) {
         <p>Click to watch on YouTube!</p>
         <VideosStyles>
           <VideoThumbnail
+            url="https://www.youtube.com/watch?v=jeBgbFS5QFQ"
+            title="Gatsby JS Course: 2.5 "
+            description="In this video we will setup GitHub to store our project whilst we continue with the series."
+            runtime="5:15"
+            fluid={data.gatsbyCourse3.childImageSharp.fluid}
+          />
+          <VideoThumbnail
             url="https://youtu.be/2PYvMe9XQhc"
             title="Gatsby JS Course: 2. Project Setup"
             description="In the second video of the Gatsby JS course we will setup our project"
@@ -142,6 +149,13 @@ export const query = graphql`
       }
     }
     gatsbyCourse2: file(relativePath: { eq: "projects/project-setup.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    gatsbyCourse3: file(relativePath: { eq: "projects/github-setup.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid
