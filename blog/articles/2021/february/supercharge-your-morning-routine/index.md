@@ -4,19 +4,15 @@ date: "2021-02-06T08:00:00.284Z"
 description: In January I dived into the content creation world. Heres some tips from my first sketchy month of content creation.
 ---
 
-### Intro
+### Intros
 
-**TODO: FIX ALL LINKS **
-
-**TODO: FIX Todoist Image **
-
-In the last 2 months I have started trying to grow on LINK(Twitter), created a LINK(YouTube) account and actively post videos. I started learning serverless framework, changed jobs, worked on my side projects and still have time to do the things I enjoy, but how have I done it? I supercharged my morning routine.
+In the last 2 months I have started trying to grow on <a href="https://twitter.com/kieranmv95" target="_blank" rel="noreferrer">Twitter</a>, created a <a href="https://www.youtube.com/channel/UCxX-3WG1vKNVJjGi2mwRziQ" target="_blank" rel="noreferrer">YouTube</a> account and actively post videos. I started learning serverless framework, changed jobs, worked on my side projects and still have time to do the things I enjoy, but how have I done it? I supercharged my morning routine.
 
 ## Its not just the morning
 
 It's funny how I call this the morning routine when the evening routine plays such a critical part in the making the morning work.
 
-Before we can talk about the morning routine we need to talk about the evening routine and more importantly, sleep! I recently watched Matthew Walkers LINK(masterclass) on sleep
+Before we can talk about the morning routine we need to talk about the evening routine and more importantly, sleep! I recently watched Matthew Walkers <a href="https://www.masterclass.com/classes/matthew-walker-teaches-the-science-of-better-sleep" target="_blank" rel="noreferrer">MasterClass on sleep</a>.
 
 In this masterclass he covers the ins and outs of sleep and why it's so important and how to do it right. And I realised, like a lot of people, I had been neglecting my sleep by being very inconsistent. I used to wake for work at 6/6.30 and go to bed anywhere between 10 and 12. Then at weekends I would wake up at 9 and go to bed anywhere between 11 - 1am. A lot of people are the same, they have a schedule through the week then it goes out of the window at weekend.
 
@@ -46,9 +42,9 @@ Do things to make it easier for yourself, change your heating timing to come on 
 
 Once I'm dressed and ready to go I come downstairs have a quick glass of water then get the dog ready and go out for a walk. Before I had the the dog I would just go out for a walk anyway. This is amazing (especially at 5am). Its so quiet, just a nice peaceful walk to wake you up and make sure your active before you start your day, it really clears your mind. Usually this brings me to around 5.30/5.40 when I get back home.
 
-When I get back home I can spend some time planning out my day, but first I make a nice cup of coffee and a bit of breakfast. To plan my day I use LINK(todoist). And I wrap up my days plan in there. usually its a simple list with categories and subtasks
+When I get back home I can spend some time planning out my day, but first I make a nice cup of coffee and a bit of breakfast. To plan my day I use <a href="https://todoist.com/" target="_blank" rel="noreferrer">todoist</a>. And I wrap up my days plan in there. usually its a simple list with categories and subtasks
 
-![todoist plan](./todoist.png)
+![todoist plan](todoist.png)
 
 Once that's done I will complete any of the tasks I can right away so I can forget about them for the rest of the day, such as taking the bins out and throwing some washing in, or writing  a script for a YouTube video. And then I do the rest through the day when I find the time.
 
@@ -56,7 +52,8 @@ The good thing with planning things out before the clock has even hit 6am means 
 
 Now you may spend the rest of your morning before shooting off to work executing the plan you have made above. I tend to create the plan, do a few tasks off it in the morning and then spend some time learning something.
 
-At this point you have had food and drink, had a walk and planned out your day, so by now, your wide awake. Good time to pick up some new skills, I usually spend 30ish minutes on LINK(PluralSight) or LINK(Front end masters) just looking into some new tech. And its proven that if you nail down the consistent sleep stuff we talked about earlier, this stuff will stick in your memory much much better!
+
+At this point you have had food and drink, had a walk and planned out your day, so by now, your wide awake. Good time to pick up some new skills, I usually spend 30ish minutes on <a href="https://www.pluralsight.com/" target="_blank" rel="noreferrer">PluralSight</a> or <a href="https://frontendmasters.com/" target="_blank" rel="noreferrer">FrontendMasters</a> just looking into some new tech. And its proven that if you nail down the consistent sleep stuff we talked about earlier, this stuff will stick in your memory much much better!
 
 And thats how I supercharged my morning routine:
 
