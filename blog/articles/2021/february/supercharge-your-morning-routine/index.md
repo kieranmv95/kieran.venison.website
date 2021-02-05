@@ -4,7 +4,7 @@ date: "2021-02-06T08:00:00.284Z"
 description: In January I dived into the content creation world. Heres some tips from my first sketchy month of content creation.
 ---
 
-### Intros
+### Intro
 
 In the last 2 months I have started trying to grow on <a href="https://twitter.com/kieranmv95" target="_blank" rel="noreferrer">Twitter</a>, created a <a href="https://www.youtube.com/channel/UCxX-3WG1vKNVJjGi2mwRziQ" target="_blank" rel="noreferrer">YouTube</a> account and actively post videos. I started learning serverless framework, changed jobs, worked on my side projects and still have time to do the things I enjoy, but how have I done it? I supercharged my morning routine.
 
