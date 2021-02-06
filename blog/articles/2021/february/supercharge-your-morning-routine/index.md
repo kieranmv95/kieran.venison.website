@@ -1,7 +1,7 @@
 ---
 title: Supercharge your morning routine
 date: "2021-02-06T08:00:00.284Z"
-description: In January I dived into the content creation world. Heres some tips from my first sketchy month of content creation.
+description: This year I started a new job, started a YouTube channel posting multiple videos weekly and learned multiple new technologies, but how did I do it? With a supercharged morning routine.
 ---
 
 ### Intro
@@ -65,4 +65,4 @@ And thats how I supercharged my morning routine:
 - execute the plan
 - learn something
 
-And that, in a nutshell, is how I managed to create an active YouTube channel, learn new technologies and work on my side projects whilst changing jobs
+And that, in a nutshell, is how I managed to create an active YouTube channel, learn new technologies and work on my side projects whilst changing jobs.
