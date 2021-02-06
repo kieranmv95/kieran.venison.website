@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env' });
+
 export default {
   siteMetadata: {
     title: `Kieran Venison`,
@@ -63,6 +67,13 @@ export default {
         defer: false,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACEID,
+        accessToken: process.env.GATSBY_CONTENTFUL_API,
       },
     },
   ],
