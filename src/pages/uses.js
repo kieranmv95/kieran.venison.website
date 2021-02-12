@@ -250,7 +250,7 @@ export const query = graphql`
     office: file(relativePath: { eq: "office.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 928, maxHeight: 400) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }

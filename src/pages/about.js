@@ -41,6 +41,10 @@ export default function AboutPage({ data }) {
           confident, naturally curious, and improving on my skills day by day.
         </p>
         <p>
+          I Create YouTube videos to teach developers! so click the YouTube icon
+          in the header to start learning front end development for yourself
+        </p>
+        <p>
           I am a confident, outgoing, self taught front end developer. I strive
           for quality both in design and performance. I have experience
           following kanban and scrum methodologies
@@ -62,11 +66,6 @@ export default function AboutPage({ data }) {
           BEM CSS methodology.
         </p>
         <h3>Other</h3>
-        <p>
-          I recently started writing a newsletter to show the world what I do
-          outside of work on a week by week basis so please head to the homepage
-          and check that out.
-        </p>
         <p>
           At UpFront conf 2019 I Delivered a lightning talk on Node, Express and
           why projects fail. This talk was a guide on writing your own API's
@@ -155,56 +154,56 @@ export const query = graphql`
     thisIsMe: file(relativePath: { eq: "this-is-me.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     wauk: file(relativePath: { eq: "companies/WAUK.png" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sorted: file(relativePath: { eq: "companies/sorted.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     mojo: file(relativePath: { eq: "companies/mojo.png" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     diversity: file(relativePath: { eq: "companies/diversity.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     cf247: file(relativePath: { eq: "companies/CF247.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     and: file(relativePath: { eq: "companies/AND.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     manchester: file(relativePath: { eq: "manchester.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

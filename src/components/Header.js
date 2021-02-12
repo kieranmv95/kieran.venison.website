@@ -86,21 +86,21 @@ export default function Header() {
       logo: file(relativePath: { eq: "kieran-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 125, maxHeight: 125) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       youtube: file(relativePath: { eq: "projects/youtube.png" }) {
         childImageSharp {
           fluid(maxWidth: 200, maxHeight: 200) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       dev: file(relativePath: { eq: "projects/dev.png" }) {
         childImageSharp {
           fluid(maxWidth: 200, maxHeight: 200) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
