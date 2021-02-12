@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --color-heart: ${({ theme }) => theme.color_heart};
     --table-header: ${({ theme }) => theme.table_header};
     --table-header-copy: ${({ theme }) => theme.table_header_copy};
+    --highlight-color: ${({ theme }) => theme.highlight_color};
   }
 
   html {

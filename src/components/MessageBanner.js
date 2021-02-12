@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const MessageBannerStyles = styled.div`
   padding: 0.5rem 1rem;
-  background: #00e3ff;
+  background: var(--highlight-color);
   text-align: center;
   p {
     margin: 0;
