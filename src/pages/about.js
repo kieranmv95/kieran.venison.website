@@ -154,56 +154,56 @@ export const query = graphql`
     thisIsMe: file(relativePath: { eq: "this-is-me.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     wauk: file(relativePath: { eq: "companies/WAUK.png" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     sorted: file(relativePath: { eq: "companies/sorted.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     mojo: file(relativePath: { eq: "companies/mojo.png" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     diversity: file(relativePath: { eq: "companies/diversity.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     cf247: file(relativePath: { eq: "companies/CF247.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     and: file(relativePath: { eq: "companies/AND.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     manchester: file(relativePath: { eq: "manchester.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
