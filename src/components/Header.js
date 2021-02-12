@@ -130,7 +130,9 @@ export default function Header() {
           >
             <Img fluid={dev.childImageSharp.fluid} alt="DevTo logo" />
           </a>
-          <Img fluid={logo.childImageSharp.fluid} alt="kieran venison" />
+          <Link to="/">
+            <Img fluid={logo.childImageSharp.fluid} alt="kieran venison" />
+          </Link>
         </div>
       </div>
       <nav>
