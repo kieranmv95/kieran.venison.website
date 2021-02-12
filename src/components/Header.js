@@ -86,21 +86,21 @@ export default function Header() {
       logo: file(relativePath: { eq: "kieran-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 125, maxHeight: 125) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       youtube: file(relativePath: { eq: "projects/youtube.png" }) {
         childImageSharp {
           fluid(maxWidth: 200, maxHeight: 200) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       dev: file(relativePath: { eq: "projects/dev.png" }) {
         childImageSharp {
           fluid(maxWidth: 200, maxHeight: 200) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
@@ -130,7 +130,9 @@ export default function Header() {
           >
             <Img fluid={dev.childImageSharp.fluid} alt="DevTo logo" />
           </a>
-          <Img fluid={logo.childImageSharp.fluid} alt="kieran venison" />
+          <Link to="/">
+            <Img fluid={logo.childImageSharp.fluid} alt="kieran venison" />
+          </Link>
         </div>
       </div>
       <nav>

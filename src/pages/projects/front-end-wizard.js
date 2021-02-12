@@ -137,7 +137,7 @@ export const query = graphql`
     few: file(relativePath: { eq: "projects/front-end-wizard.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
