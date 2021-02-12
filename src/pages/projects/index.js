@@ -52,21 +52,21 @@ export const query = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 200, maxHeight: 200) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     kieranVenison: file(relativePath: { eq: "kieran-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 200, maxHeight: 200) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     youtube: file(relativePath: { eq: "projects/youtube.png" }) {
       childImageSharp {
         fluid(maxWidth: 200, maxHeight: 200) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
