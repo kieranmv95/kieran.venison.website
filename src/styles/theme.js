@@ -14,6 +14,7 @@ export default {
     background_color_offset: '#eee',
     table_header: '#333',
     table_header_copy: '#fdfdfd',
+    highlight_color: '#00e3ff',
     ...breakpoints,
   },
   dark: {
@@ -26,6 +27,7 @@ export default {
     background_color_offset: '#333232',
     table_header: '#dadada',
     table_header_copy: '#0e0e0e',
+    highlight_color: '#ff0071',
     ...breakpoints,
   },
 };

@@ -7,6 +7,7 @@ import Header from './Header';
 import useTheme from '../hooks/useTheme';
 import Switch from './Switch';
 import theme from '../styles/theme';
+import MessageBanner from './MessageBanner';
 
 const BodyStyles = styled.div`
   min-height: calc(100vh - 2px);
@@ -35,7 +36,21 @@ export default function Layout({ children }) {
     <ThemeProvider theme={theme[themeName]}>
       <BodyStyles>
         <GlobalStyles />
-        <Header />
+        <div>
+          <MessageBanner duration={10000}>
+            <p>
+              🎉 Please check out my new <b>FREE</b> YouTube course on GatsbyJS!{' '}
+              <a
+                href="https://www.youtube.com/watch?v=F7C3IQo4HqU&list=PLES9xDLeGEFUE2kfe17OBS5D18cwSUCqR"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Click here to watch! 🎉
+              </a>
+            </p>
+          </MessageBanner>
+          <Header />
+        </div>
         <main>{children}</main>
         <div>
           <Footer />
