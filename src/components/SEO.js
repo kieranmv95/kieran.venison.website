@@ -26,6 +26,7 @@ export default function SEO({ title, description, children }) {
         name="description"
         content={description || site.siteMetadata.description}
       />
+      <meta name="monetization" content="$ilp.uphold.com/jJ44ZMFPLRW8" />
       {children}
     </Helmet>
   );
