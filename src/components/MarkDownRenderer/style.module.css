@@ -1,0 +1,44 @@
+.blogPostContent {
+  @apply mt-4 space-y-6;
+}
+
+.blogPostContent a {
+  @apply text-primary hover:underline;
+}
+
+.blogPostContent h2 {
+  @apply text-2xl font-bold;
+}
+
+.blogPostContent ul li {
+  @apply list-disc;
+}
+
+.blogPostContent ul {
+  @apply pl-4;
+}
+
+.blogPostContent table {
+  @apply border-collapse w-full;
+}
+
+.blogPostContent table th {
+  @apply bg-zinc-900;
+}
+
+.blogPostContent table td,
+.blogPostContent table th {
+  @apply border-solid border-white border-[0.0625rem] text-left p-2;
+}
+
+.blogPostContent tr:nth-of-type(odd) {
+  @apply bg-zinc-800;
+}
+
+.blogPostContent tr:nth-of-type(even) {
+  @apply bg-zinc-700;
+}
+
+.blogPostContent img {
+  @apply max-w-full;
+}

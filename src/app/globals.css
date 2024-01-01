@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-fg bg-gradient-to-b from-bg-start to-bg-end min-h-screen;
+}
+
+.generic-container {
+  @apply container mx-auto px-4;
+}
+
+.skinny-container {
+  @apply container mx-auto px-4 md:max-w-4xl;
+}

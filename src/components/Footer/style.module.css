@@ -1,0 +1,11 @@
+.icons {
+  @apply flex gap-4;
+}
+
+.icons a {
+  @apply opacity-50 text-white hover:opacity-100;
+}
+
+.icons a svg {
+  @apply w-8 h-8;
+}
