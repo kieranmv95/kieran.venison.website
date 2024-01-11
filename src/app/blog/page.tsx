@@ -9,6 +9,16 @@ import MarkDownRenderer from "@/components/MarkDownRenderer";
 
 const posts = [
   {
+    link: "https://twitter.com/theliftingdev/status/1745362033078382713",
+    date: "2024-11-01T17:00:00.000Z",
+    service: "X | Formely Twitter",
+    content: `
+3-4 hour hackathon to build a game, built in an alpha engine that one of the devs made!
+
+Very fun challenge and amazed that all the teams managed to develop functional mini-games in that tiny window.
+    `,
+  },
+  {
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7147538745750089728/",
     date: "2024-01-01T17:00:00.000Z",
     service: "LinkedIn",
