@@ -154,7 +154,7 @@ the simplicity of this game meant could build this in about 10 minutes if I had 
 
 ![kanye west angry laugh](kanye-west-laugh.gif)
 
-With that in mind, even though the time cap was only 3-4 hours it would have been wiser to spend 40 minutes of that time actually planning the build, I would have likely got to the same game in terms of end resultand would likely have faced other issues from doing a different approach but I strongly think I would have come to a better structured approach which would be much more extensible and polished than this one.
+With that in mind, even though the time cap was only 3-4 hours it would have been wiser to spend 40 minutes of that time actually planning the build, I would have likely got to the same game in terms of end result and would likely have faced other issues from doing a different approach but I strongly think I would have come to a better structured approach which would be much more extensible and polished than this one.
 
 ## It wasn't just a game
 
