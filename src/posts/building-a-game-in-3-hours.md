@@ -158,7 +158,7 @@ With that in mind, even though the time cap was only 3-4 hours it would have bee
 
 ## It wasn't just a game
 
-At the same time, the game was going on I almost forgot the team was working on multiple things the designer was constantly firing assets to me and we had a mini collab back and forth as we developed the game and the rest of the team fired us ideas for the screen and worked on the offline assets for the game.
+At the same time, the game was going on I almost forgot the team was working on multiple things, the designer was constantly firing assets to me and we had a mini collab back and forth and as we developed the game and the rest of the team fired us ideas for the screen and worked on the offline assets for the game.
 
 The offline game was as simple a concept as the game itself. A series of handout sheets with items you could find on related to healthcare as an educational challenge and the concept of a mural-style wallpaper you could put in children's waiting areas with a variety of things they could look for to distract them from the situation they are in! an amazing, yet so simple concept. They even made a series of sketches and drawings and fastened them together and rolled it out during the demo back to the business to explain the concept which was super cool to see as I had been heads down in my bubble for the last 3 hours!
 
