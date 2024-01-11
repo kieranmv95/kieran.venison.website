@@ -5,6 +5,36 @@ import fs from "fs";
 import matter from "gray-matter";
 import { Metadata } from "next";
 import path from "path";
+import MarkDownRenderer from "@/components/MarkDownRenderer";
+
+const posts = [
+  {
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7147538745750089728/",
+    date: "2024-01-01T17:00:00.000Z",
+    service: "LinkedIn",
+    content: `
+Happy new year to all my connections 🎉 Wishing everyone a great 2024!
+
+New Year Update:
+
+I have been quiet about it but I start my new role with Little Journey on the 4th of January, Really excited about this as it aligns with a lot of my beliefs both personally and professionally!
+
+Updated my [personal website](https://www.kieranvenison.co.uk/) to make use NextJS 13 features and adopted tailwind to trim down all the boilerplate and custom helper classes I had.
+
+Wrote a small [article on dev.to](https://dev.to/kieranmv95/tailwind-my-altered-opinion-1of3) about tailwind and I also cross posted this to my updated website, so please check it out
+    `,
+  },
+  {
+    link: "https://twitter.com/theliftingdev/status/1741768056555085931",
+    date: "2024-01-01T18:00:00.000Z",
+    service: "X | Formerly Twitter",
+    content: `
+Ever since switching to apple silicon, it means the laptop doesn't get hot enough to comfortably place it on my legs when wearing shorts. I used to run a build or run jest and my laptop was warm enough to be comfortable. no more.
+  
+Nice problem to have :D
+    `,
+  },
+];
 
 const folder = "src/posts/";
 
@@ -36,7 +66,7 @@ export default function Blog() {
 
   return (
     <main>
-      <div className="skinny-container py-8  ">
+      <div className="skinny-container py-8">
         <h1 className="text-4xl font-bold lg:text-5xl mb-4">BLOG</h1>
         <p className="max-w-lg mb-6 md:mb-8">
           My mad ramblings about the world of web development, tech and other
@@ -70,6 +100,16 @@ export default function Blog() {
               </li>
             ))}
         </ul>
+
+        <h2 className="text-4xl font-bold lg:text-5xl mb-4 mt-8">POSTS</h2>
+        {posts.map((post) => (
+          <div key={post.date} className="mb-6 p-6 bg-slate-900 rounded">
+            <a href={post.link} className="hover:underline text-primary">
+              {prettyDate(new Date(post.date))} - {post.service}
+            </a>
+            <MarkDownRenderer markdown={post.content} />
+          </div>
+        ))}
       </div>
     </main>
   );

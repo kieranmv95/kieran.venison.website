@@ -42,3 +42,7 @@
 .blogPostContent img {
   @apply max-w-full;
 }
+
+.blogPostContent blockquote {
+  @apply border-l-2 border-primary p-4 text-lg;
+}
