@@ -7,7 +7,7 @@ description: Join us on a journey through the chaos and creativity of our latest
 Hackathons are super fun. To date, I have done two other hackathons, the now-defunct Hack Manchester event. In which you had 24 hours non-stop to build something in a team of 6 to a theme provided by the sponsor. So when I was made aware that the company away day was going to be a hackathon, I was super excited. But it had some quirks I had never experienced before:
 
 - It was building a game - new territory for me
-- It was built in React - **Yes in react**, not in Unity even using the Canvas _(I will expand on this shortly)_
+- It was built in React - **Yes in react**, not in Unity or even using the Canvas _(I will expand on this shortly)_
 - I was the only developer on the team of 5
 - I had never met any of the people and started at the company 5 days prior to the event
 - We **ONLY** had 3-4 hours of coding time
