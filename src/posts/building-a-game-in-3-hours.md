@@ -144,13 +144,13 @@ So all finished just in time, the messiest code I have written in years, but you
 Given a couple more hours, and not having the sloppiest code known to man I wanted to implement things such as
 
 - Saving high scores
-- Randomizing the screens
-- Randomizing the hidden item position
+- Randomising the screens
+- Randomising the hidden item position
 - Moving targets as a dexterity version
 
-But after all of this complexity in drawing a grid and making cell ranges, I realized something, at the very end that made me laugh.
+But after all of this complexity in drawing a grid and making cell ranges, I realised something, at the very end that made me laugh.
 
-the simplicity of this game meant could build this in about 10 minutes if I had just have made a drawable SVG to the screen and popped onClick on it!
+the simplicity of this game meant could build this in about 10 minutes if I had just made a drawable SVG to the screen and popped onClick on it! I did have access to the HTML DOM after all!
 
 ![kanye west angry laugh](kanye-west-laugh.gif)
 
