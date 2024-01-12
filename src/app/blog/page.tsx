@@ -9,6 +9,20 @@ import MarkDownRenderer from "@/components/MarkDownRenderer";
 
 const posts = [
   {
+    link: "https://www.linkedin.com/posts/kieran-venison_unpopular-opinion-but-sometimes-a-more-activity-7151500535584452609-282d?utm_source=share&utm_medium=member_desktop",
+    date: "2024-11-01T17:00:00.000Z",
+    service: "LinkedIn",
+    content: `
+Unpopular opinion, but sometimes, a more extended interview process is beneficial. In development, I often hear people complain about having more than two interviews before receiving an offer, while simultaneously seeking a substantial salary!
+
+If the company is rigorously vetting you, assessing your communication across various business facets, and engaging in paired programming exercises, it indicates a genuine effort to find a good fit for the team.
+
+I don't believe you can achieve that level of understanding in just a couple of interviews.
+
+From my perspective, if everyone else on your team has undergone a similar process, starting means you join a group of individuals who have demonstrated they belong precisely where they are in the business and should be a solid cultural fit.
+    `,
+  },
+  {
     link: "https://twitter.com/theliftingdev/status/1745362033078382713",
     date: "2024-11-01T17:00:00.000Z",
     service: "X | Formely Twitter",
