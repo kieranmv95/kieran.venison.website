@@ -46,3 +46,7 @@
 .blogPostContent blockquote {
   @apply border-l-2 border-primary p-4 text-lg;
 }
+
+.blogPostContent p > code {
+  @apply text-red-600 bg-slate-800 p-1 rounded;
+}
