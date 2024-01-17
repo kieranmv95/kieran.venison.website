@@ -2,6 +2,7 @@
 title: Deep Dive into CSS :has Selector
 date: "2024-01-17T10:00:00.284Z"
 description: Uncover the capabilities of the CSS :has selector. This post delves into its uses, browser support, and impact on modern web design, offering essential insights for forward-thinking developers.
+devTo: https://dev.to/kieranmv95/deep-dive-into-css-has-selector-1joe
 ---
 
 In the ever-evolving landscape of web development, CSS continues to offer powerful tools that significantly enhance the capability of web designers and developers. A prime example of this progress is the introduction of the `:has` selector. Part of the CSS Selectors Level 4 specification, :has brings a new paradigm to CSS, allowing developers to select and style elements in a more contextual and conditional manner.

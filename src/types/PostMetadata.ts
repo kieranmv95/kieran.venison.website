@@ -3,4 +3,5 @@ export type PostMetadata = {
   title: string;
   date: string;
   description: string;
+  devTo?: string;
 };
