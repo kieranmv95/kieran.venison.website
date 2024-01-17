@@ -148,7 +148,7 @@ With the end of Internet Explorer's lifecycle, web developers are no longer cons
 
 While the `:has` selector opens new avenues in CSS, it's essential to consider its impact on rendering performance. Since `:has` is more complex than traditional selectors, it can introduce performance overhead, especially when used extensively or with complex descendant selectors. Developers should balance the use of `:has` with performance best practices.
 
-But I'm going to take a stab in the dark here and say that this is more than likely going to be much quicker than writing havascruit to achieve the same effect!
+But I'm going to take a stab in the dark here and say that this is more than likely going to be much quicker than writing javascript to achieve the same effect!
 
 **Cascading and Specificity**
 
