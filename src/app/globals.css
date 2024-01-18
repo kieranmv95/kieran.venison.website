@@ -13,3 +13,13 @@ body {
 .skinny-container {
   @apply container mx-auto px-4 md:max-w-4xl;
 }
+
+/* Make all posts opaque except the one you are hovering on */
+
+.posts:hover > a {
+  @apply opacity-50 transition-all;
+}
+
+.posts:hover > a:hover {
+  @apply opacity-100 transition-all;
+}

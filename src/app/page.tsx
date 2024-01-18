@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { getLatestPostsMetadata } from "./helpers/blog";
+import { prettyDate } from "@/helpers/prettyDate";
 
 export const metadata: Metadata = {
   title: "Home | Kieran Venison",
@@ -8,6 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const postMetadata = getLatestPostsMetadata();
+
   return (
     <main>
       <div className="generic-container py-24 relative">
@@ -42,7 +46,44 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="generic-container py-24 space-y-3">
+      <div className="generic-container py-24 space-y-6">
+        <h2 className="text-3xl font-bold lg:text-4xl">BLOG</h2>
+        <p>
+          share my mad ramblings on web development, tech, and other topics that
+          pique my interest. You can find my blog posts cross-posted on{" "}
+          <a
+            href="https://dev.to/kieranmv95"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary hover:underline"
+          >
+            dev.to
+          </a>{" "}
+          Stay tuned for insightful content and discussions in the world of web
+          development.
+        </p>
+        <div className="grid gap-4 lg:grid-cols-3 pointer posts">
+          {postMetadata.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="p-6 bg-slate-900 rounded"
+            >
+              <p className="text-primary">{prettyDate(new Date(post.date))}</p>
+              <h3 className="text-lg font-bold mb-4">{post.title}</h3>
+              <p className="hidden lg:block">{post.description}</p>
+            </Link>
+          ))}
+        </div>
+        <Link
+          className="inline-block px-5 py-3 border-solid border-2 border-primary text-primary hover:bg-primary hover:text-bg-end active:bg-primary active:text-bg-end"
+          href="/blog"
+        >
+          All Blog Posts
+        </Link>
+      </div>
+
+      <div className="generic-container py-24 space-y-6">
         <h2 className="text-3xl font-bold lg:text-4xl">ABOUT</h2>
         <p>
           I&apos;m a Manchester-based Developer, specializing in building
@@ -62,25 +103,6 @@ export default function Home() {
           href="/about"
         >
           About me
-        </Link>
-      </div>
-
-      <div className="generic-container py-24 space-y-3">
-        <h2 className="text-3xl font-bold lg:text-4xl">BLOG</h2>
-        <p>
-          I share my mad ramblings on web development, tech, and other topics
-          that pique my interest. You can find my blog posts cross-posted on{" "}
-          <a href="https://dev.to/kieranmv95" target="_blank" rel="noreferrer">
-            dev.to
-          </a>
-          . Stay tuned for insightful content and discussions in the world of
-          web development.
-        </p>
-        <Link
-          className="inline-block px-5 py-3 border-solid border-2 border-primary text-primary hover:bg-primary hover:text-bg-end active:bg-primary active:text-bg-end"
-          href="/blog"
-        >
-          Blog
         </Link>
       </div>
     </main>

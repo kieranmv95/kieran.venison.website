@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { prettyDate } from "@/helpers/prettyDate";
-import { PostMetadata } from "@/types/PostMetadata";
-import fs from "fs";
-import matter from "gray-matter";
 import { Metadata } from "next";
-import path from "path";
 import MarkDownRenderer from "@/components/MarkDownRenderer";
+import { getPostMetadata } from "../helpers/blog";
 
 const posts = [
   {
@@ -59,26 +56,6 @@ Nice problem to have :D
     `,
   },
 ];
-
-const folder = "src/posts/";
-
-const getPostMetadata = (): PostMetadata[] => {
-  const files = fs.readdirSync(path.join(process.cwd(), folder), "utf-8");
-
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
-
-  const posts = markdownPosts.map((fileName) => {
-    const fileContent = fs.readFileSync(`${folder}/${fileName}`, "utf-8");
-    const matterResult = matter(fileContent);
-
-    return {
-      slug: fileName.replace(".md", ""),
-      ...matterResult.data,
-    };
-  });
-
-  return posts as PostMetadata[];
-};
 
 export const metadata: Metadata = {
   title: "Blog | Kieran Venison",
