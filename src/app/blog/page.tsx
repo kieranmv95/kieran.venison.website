@@ -83,23 +83,19 @@ export default function Blog() {
         </p>
 
         <ul className="grid gap-4">
-          {postMetadata
-            .sort(
-              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-            )
-            .map((post) => (
-              <li key={post.slug}>
-                <Link
-                  href={`blog/${post.slug}`}
-                  className="hover:underline grid border border-primary border-t-0 border-l-2 border-r-0 border-b-0 pl-4 md:border-none md:pl-0 md:block"
-                >
-                  <span className="text-primary md:mr-2">
-                    {prettyDate(new Date(post.date))}
-                  </span>
-                  {post.title}
-                </Link>
-              </li>
-            ))}
+          {postMetadata.map((post) => (
+            <li key={post.slug}>
+              <Link
+                href={`blog/${post.slug}`}
+                className="hover:underline grid border border-primary border-t-0 border-l-2 border-r-0 border-b-0 pl-4 md:border-none md:pl-0 md:block"
+              >
+                <span className="text-primary md:mr-2">
+                  {prettyDate(new Date(post.date))}
+                </span>
+                {post.title}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <h2 className="text-4xl font-bold lg:text-5xl mb-4 mt-8">POSTS</h2>

@@ -20,7 +20,9 @@ export const getPostMetadata = (): PostMetadata[] => {
     };
   });
 
-  return posts as PostMetadata[];
+  return (posts as PostMetadata[]).sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 };
 
 export const getLatestPostsMetadata = (): PostMetadata[] => {

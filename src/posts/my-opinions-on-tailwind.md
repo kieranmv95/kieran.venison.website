@@ -1,7 +1,7 @@
 ---
 title: Tailwind, My Altered Opinion
 date: "2024-01-01T18:00:00.000Z"
-description: My two cents on tailwind and how that has changed over the years!
+description: My two cents on tailwind and how my opinion has adapted and changed over the past 3 years!
 ---
 
 When Tailwind first emerged on the web development scene, I found myself firmly rooted in my comfort zone, relying on familiar practices and tools. As someone who wasn't an avid user of many frameworks, I typically stuck to a minimalistic approach, often implementing a reset like Meyerweb or resorting to the well-established Bootstrap when the need arose. Tailwind, with its extensive list of classes, initially struck me as overwhelming and cluttered—an apparent departure from the simplicity I had grown accustomed to. Perhaps it was a reluctance to embrace change or an attachment to my existing workflow that fueled my initial skepticism. However, as time passed, so did my perspective. Join me as I unravel the factors that prompted a shift in my opinions and ultimately led me to reconsider this dynamic framework.
