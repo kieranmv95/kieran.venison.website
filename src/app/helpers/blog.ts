@@ -30,3 +30,17 @@ export const getLatestPostsMetadata = (): PostMetadata[] => {
 
   return postMetadata.slice(0, 3);
 };
+
+export const getPost = (slug: string): { meta: PostMetadata; blog: string } => {
+  const file = fs.readFileSync(
+    path.join(process.cwd(), `${FOLDER}/${slug}.md`),
+    "utf-8"
+  );
+
+  const { data: frontmatter, content } = matter(file);
+
+  return {
+    meta: frontmatter as PostMetadata,
+    blog: content,
+  };
+};

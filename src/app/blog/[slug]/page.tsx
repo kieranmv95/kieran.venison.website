@@ -1,32 +1,12 @@
 import type { Metadata } from "next";
-import { PostMetadata } from "@/types/PostMetadata";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
-
-import fs from "fs";
-import matter from "gray-matter";
+import { getPost } from "@/app/helpers/blog";
 import { prettyDate } from "@/helpers/prettyDate";
-import path from "path";
 import MarkDownRenderer from "@/components/MarkDownRenderer";
 
 type Props = {
   params: { slug: string };
-};
-
-const getPost = (slug: string): { meta: PostMetadata; blog: string } => {
-  const folder = "src/posts/";
-
-  const file = fs.readFileSync(
-    path.join(process.cwd(), `${folder}/${slug}.md`),
-    "utf-8"
-  );
-
-  const { data: frontmatter, content } = matter(file);
-
-  return {
-    meta: frontmatter as PostMetadata,
-    blog: content,
-  };
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
