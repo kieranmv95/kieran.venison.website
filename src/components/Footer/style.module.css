@@ -3,7 +3,7 @@
 }
 
 .icons a {
-  @apply opacity-50 text-white hover:opacity-100;
+  @apply opacity-50 text-white hover:opacity-100 block;
 }
 
 .icons a svg {

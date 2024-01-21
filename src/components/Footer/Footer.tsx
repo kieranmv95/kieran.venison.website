@@ -18,6 +18,7 @@ const Footer = () => (
             href="https://twitter.com/theliftingdev"
             target="_blank"
             rel="noreferrer"
+            aria-label="Go to Kieran Venisons X, formerly Twitter account"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
@@ -27,6 +28,7 @@ const Footer = () => (
             href="https://github.com/kieranmv95"
             target="_blank"
             rel="noreferrer"
+            aria-label="Go to Kieran Venisons X GitHub account"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -36,6 +38,7 @@ const Footer = () => (
             href="https://www.linkedin.com/in/kieran-venison/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Go to Kieran Venisons LinkedIn account"
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
@@ -45,12 +48,18 @@ const Footer = () => (
             href="https://www.instagram.com/theliftingdev/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Go to Kieran Venisons Instagram account"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
         <li>
-          <a href="https://dev.to/kieranmv95" target="_blank" rel="noreferrer">
+          <a
+            href="https://dev.to/kieranmv95"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Go to Kieran Venisons DevTo account"
+          >
             <FontAwesomeIcon icon={faDev} />
           </a>
         </li>
