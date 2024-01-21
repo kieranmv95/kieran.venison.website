@@ -23,20 +23,20 @@
 }
 
 .blogPostContent table th {
-  @apply bg-zinc-900;
+  @apply bg-slate-400 dark:bg-zinc-900;
 }
 
 .blogPostContent table td,
 .blogPostContent table th {
-  @apply border-solid border-white border-[0.0625rem] text-left p-2;
+  @apply border-solid border-slate-400 dark:border-zinc-900 border-[0.0625rem] text-left p-2;
 }
 
 .blogPostContent tr:nth-of-type(odd) {
-  @apply bg-zinc-800;
+  @apply bg-slate-200 dark:bg-zinc-800;
 }
 
 .blogPostContent tr:nth-of-type(even) {
-  @apply bg-zinc-700;
+  @apply bg-slate-300 dark:bg-zinc-700;
 }
 
 .blogPostContent img {
@@ -48,5 +48,5 @@
 }
 
 .blogPostContent p > code {
-  @apply text-red-600 bg-slate-800 p-1 rounded;
+  @apply text-red-600 bg-slate-200 dark:bg-slate-800 p-1 rounded;
 }

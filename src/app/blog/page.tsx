@@ -100,7 +100,10 @@ export default function Blog() {
 
         <h2 className="text-4xl font-bold lg:text-5xl mb-4 mt-8">POSTS</h2>
         {posts.map((post) => (
-          <div key={post.date} className="mb-6 p-6 bg-slate-900 rounded">
+          <div
+            key={post.date}
+            className="mb-6 p-6 bg-slate-200 dark:bg-slate-900 rounded"
+          >
             <a href={post.link} className="hover:underline text-primary">
               {prettyDate(new Date(post.date))} - {post.service}
             </a>

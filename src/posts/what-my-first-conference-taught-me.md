@@ -1,7 +1,7 @@
 ---
 title: What my first conference taught me
 date: "2018-07-25T13:10:00.284Z"
-description: I thought I would write this blog post about why you should go to conferences and how you should go about taking things away from them. After all, if you pay the price for the tickets you want to make sure you egt the most out of it!
+description: I thought I would write this blog post about why you should go to conferences and how you should go about taking things away from them. After all, if you pay the price for the tickets you want to make sure you GET the most out of it!
 ---
 
 Let's start getting the most out of conferences without missing everything because we are too busy with our heads down, trying to write every word down.
@@ -12,7 +12,7 @@ I recently went to my first tech conference [UpFront Conf 2018](https://twitter.
 
 They had a great line up of speakers which I would recommend checking out including [@wesbos](https://twitter.com/wesbos), [Laura Carvajal](https://twitter.com/lc512k), [Anna Migas](https://twitter.com/szynszyliszys) and [more](http://upfrontconf.com/speakers/). You should hit them up on twitter they post some great content.
 
-I thought I would write this blog post about why you should go to conferences and how you should go about taking things away from them. After all, if you pay the price for the tickets you want to make sure you egt the most out of it!
+I thought I would write this blog post about why you should go to conferences and how you should go about taking things away from them. After all, if you pay the price for the tickets you want to make sure you GET the most out of it!
 
 ## Lets go!
 

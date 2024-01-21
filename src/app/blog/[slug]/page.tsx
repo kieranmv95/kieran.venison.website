@@ -36,7 +36,7 @@ export default function BlogPost({ params }: Props) {
             rel="noreferrer"
             className="text-lg text-primary inline-flex items-center gap-2 hover:underline"
           >
-            <span className="text-white text-3xl">
+            <span className="text-slate-800 dark:text-white text-3xl">
               <FontAwesomeIcon icon={faDev} />
             </span>{" "}
             Read on dev.to

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-fg bg-gradient-to-b from-bg-start to-bg-end min-h-screen;
+  @apply text-black dark:text-white dark:bg-gradient-to-b dark:from-bg-start dark:to-bg-end min-h-screen;
 }
 
 .generic-container {

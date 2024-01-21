@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getLatestPostsMetadata } from "./helpers/blog";
 import { prettyDate } from "@/helpers/prettyDate";
+import CompanyLogos from "@/components/CompanyLogos";
 
 export const metadata: Metadata = {
   title: "Home | Kieran Venison",
@@ -30,20 +31,7 @@ export default function Home() {
           confidence and innate curiosity, I am continuously enhancing my skills
           day by day.
         </p>
-        <div className="flex flex-wrap gap-4 md:gap-6">
-          <img alt="haven company logo" src="/company_logos/haven.svg" />
-          <img alt="gymshark company logo" src="/company_logos/gymshark.svg" />
-          <img
-            alt="mojo mortgages company logo"
-            src="/company_logos/mojo.svg"
-          />
-          <img alt="sorted company logo" src="/company_logos/sorted.svg" />
-          <img alt="and digital company logo" src="/company_logos/and.svg" />
-          <img
-            alt="car finance 247 company logo"
-            src="/company_logos/cf247.svg"
-          />
-        </div>
+        <CompanyLogos />
       </div>
 
       <div className="generic-container py-24 space-y-6">
@@ -67,7 +55,7 @@ export default function Home() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="p-6 bg-slate-900 rounded"
+              className="p-6 bg-slate-200 dark:text-white dark:bg-slate-900 rounded"
             >
               <p className="text-primary">{prettyDate(new Date(post.date))}</p>
               <h3 className="text-lg font-bold mb-4">{post.title}</h3>
@@ -76,7 +64,7 @@ export default function Home() {
           ))}
         </div>
         <Link
-          className="inline-block px-5 py-3 border-solid border-2 border-primary text-primary hover:bg-primary hover:text-bg-end active:bg-primary active:text-bg-end"
+          className="inline-block px-5 py-3 border-solid border-2 border-primary text-primary hover:bg-primary hover:text-white dark:hover:text-bg-end active:bg-primary active:text-bg-end"
           href="/blog"
         >
           All Blog Posts
@@ -99,7 +87,7 @@ export default function Home() {
           of League of Legends or Call of Duty any day of the week.
         </p>
         <Link
-          className="inline-block px-5 py-3 border-solid border-2 border-primary text-primary hover:bg-primary hover:text-bg-end active:bg-primary active:text-bg-end"
+          className="inline-block px-5 py-3 border-solid border-2 border-primary text-primary hover:bg-primary hover:text-white dark:hover:text-bg-end active:bg-primary active:text-bg-end"
           href="/about"
         >
           About me

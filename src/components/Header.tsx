@@ -1,7 +1,7 @@
 import ActiveLink from "./ActiveLink";
 
 const Header = () => (
-  <header className="sticky top-0 left-0 bg-bg-start z-50">
+  <header className="sticky top-0 left-0 bg-slate-200 dark:bg-bg-start z-50">
     <nav className="generic-container">
       <ul className="flex gap-5">
         <li>
