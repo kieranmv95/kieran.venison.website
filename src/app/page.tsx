@@ -17,38 +17,38 @@ export default function Home() {
     <main>
       <div className="generic-container py-24 relative">
         <Image
-          src="/images/kieran.png"
-          width={120}
-          height={120}
-          alt="Kieran Venison"
-          className="mb-4"
+            src="/images/kieran.png"
+            width={120}
+            height={120}
+            alt="Kieran Venison"
+            className="mb-4"
         />
         <p className="text-primary">Hi I&apos;m</p>
         <h1 className="text-4xl font-bold lg:text-5xl mb-4">KIERAN VENISON</h1>
         <p className="max-w-lg mb-6 md:mb-8">
-          I&apos;m a Manchester-based Developer specializing in building digital
-          products for both businesses and consumers. With a strong sense of
-          confidence and innate curiosity, I am continuously enhancing my skills
-          day by day.
+          I am a seasoned Developer located in Manchester, with a rich background in crafting digital products tailored
+          to meet the needs of both businesses and consumers. Possessing a profound sense of confidence and an
+          unwavering curiosity, I am committed to perpetual skill enhancement and staying at the forefront of
+          technological advancements.
         </p>
-        <CompanyLogos />
+        <p className="max-w-3xl mb-6 md:mb-8">
+          My portfolio includes collaborations with esteemed companies, showcasing a track record of successful partnerships:
+        </p>
+        <CompanyLogos/>
       </div>
 
       <div className="generic-container py-24 space-y-6">
         <h2 className="text-3xl font-bold lg:text-4xl">BLOG</h2>
         <p>
-          share my mad ramblings on web development, tech, and other topics that
-          pique my interest. You can find my blog posts cross-posted on{" "}
-          <a
+          Dive into my insights on web development, technology, and other intriguing topics. My writings are also shared on <a
             href="https://dev.to/kieranmv95"
             target="_blank"
             rel="noreferrer"
             className="text-primary hover:underline"
-          >
-            dev.to
-          </a>{" "}
-          Stay tuned for insightful content and discussions in the world of web
-          development.
+        >
+          dev.to
+        </a>, providing a window into my explorations and discussions in the web development landscape. Anticipate
+          engaging content and lively debates.
         </p>
         <div className="grid gap-4 lg:grid-cols-3 pointer posts">
           {postMetadata.map((post) => (
@@ -74,17 +74,10 @@ export default function Home() {
       <div className="generic-container py-24 space-y-6">
         <h2 className="text-3xl font-bold lg:text-4xl">ABOUT</h2>
         <p>
-          I&apos;m a Manchester-based Developer, specializing in building
-          digital products for businesses and consumers. With a confident and
-          naturally curious mindset, I continuously strive to improve my skills
-          every day.
+          I excel in creating digital solutions tailored to the needs of both businesses and consumers. My approach is fueled by a blend of confidence and innate curiosity, driving me to enhance my abilities daily.
         </p>
         <p>
-          Outside of work and parenting, I have a passion for lifting heavy
-          weights and gaming. Specifically, I enjoy Olympic Lifting and
-          CrossFit, although I promise not to talk about CrossFit incessantly.
-          If you&apos;re up for some gaming, feel free to hit me up for a game
-          of League of Legends or Call of Duty any day of the week.
+          Beyond my professional endeavors and responsibilities as a parent, I am deeply passionate about weightlifting and gaming. My interests lie particularly in Olympic Lifting and CrossFit, and while I&apos;m enthusiastic about these sports, I refrain from overwhelming others with CrossFit talk. For those interested in gaming, I&apos;m always ready for a match in &quot;League of Legends&quot; or &quot;The Finals&quot; any day of the week.
         </p>
         <Link
           className="inline-block px-5 py-3 border-solid border-2 border-primary text-primary hover:bg-primary hover:text-white dark:hover:text-bg-end active:bg-primary active:text-bg-end"
