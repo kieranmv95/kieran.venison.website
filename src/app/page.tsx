@@ -26,7 +26,9 @@ export default function Home() {
               alt="Kieran Venison"
               className="rounded-full mx-auto mb-6 shadow-lg"
             />
-            <p className="text-primary font-medium text-lg mb-2">Hi, I'm</p>
+            <p className="text-primary font-medium text-lg mb-2">
+              Hi, I&apos;m
+            </p>
             <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
               Kieran Venison
             </h1>
@@ -69,8 +71,8 @@ export default function Home() {
               Trusted by Industry Leaders
             </h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              I've collaborated with esteemed companies to deliver innovative
-              solutions that drive results.
+              I&apos;ve collaborated with esteemed companies to deliver
+              innovative solutions that drive results.
             </p>
           </div>
           <CompanyLogos />
@@ -163,8 +165,8 @@ export default function Home() {
                   solution delivers measurable value.
                 </p>
                 <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-                  When I'm not coding, you'll find me in the gym pursuing
-                  Olympic lifting or gaming with friends. I believe in
+                  When I&apos;m not coding, you&apos;ll find me in the gym
+                  pursuing Olympic lifting or gaming with friends. I believe in
                   maintaining a healthy work-life balance while staying
                   passionate about technology.
                 </p>

@@ -131,7 +131,7 @@ export default function About() {
               About Me
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              I'm a Manchester-based developer with over{" "}
+              I&apos;m a Manchester-based developer with over{" "}
               {new Date().getFullYear() - 2013} years of experience building
               digital products that drive business growth and user satisfaction.
             </p>
@@ -181,14 +181,14 @@ export default function About() {
               <p className="text-gray-700 dark:text-gray-200 leading-relaxed mb-4">
                 I pride myself on being a{" "}
                 <strong>strong communicator and analytical thinker</strong>.
-                Whether it's translating business goals into technical solutions
-                or collaborating with teams and clients, I bring clarity,
-                curiosity, and problem-solving to every project.
+                Whether it&apos;s translating business goals into technical
+                solutions or collaborating with teams and clients, I bring
+                clarity, curiosity, and problem-solving to every project.
               </p>
               <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-                Recently, I've expanded into mobile technologies, bringing the
-                same principles of clean, maintainable code and great UX to new
-                platforms.
+                Recently, I&apos;ve expanded into mobile technologies, bringing
+                the same principles of clean, maintainable code and great UX to
+                new platforms.
               </p>
             </div>
           </div>
@@ -264,7 +264,7 @@ export default function About() {
                 </h3>
                 <p className="text-gray-700 dark:text-gray-200 text-sm leading-relaxed mb-4">
                   Regularly work on small dev projects, always exploring new
-                  tools and languages. Whether it's diving into{" "}
+                  tools and languages. Whether it&apos;s diving into{" "}
                   <strong>C#</strong>, experimenting with <strong>D3.js</strong>
                   , or testing new frameworks, I stay curious and committed to
                   lifelong learning.
