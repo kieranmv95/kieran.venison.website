@@ -33,15 +33,6 @@ const Header = () => (
             <span className="text-primary">02.</span>Blog
           </ActiveLink>
         </li>
-        <li>
-          <ActiveLink
-            href="/projects"
-            className="hover:underline py-4 inline-block"
-            activeClassname="text-primary"
-          >
-            <span className="text-primary">03.</span>Projects
-          </ActiveLink>
-        </li>
       </ul>
     </nav>
   </header>

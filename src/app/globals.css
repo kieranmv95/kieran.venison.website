@@ -23,3 +23,217 @@ body {
 .posts:hover > a:hover {
   @apply opacity-100 transition-all;
 }
+
+.blogPostContent {
+  @apply mt-4 space-y-6;
+}
+
+.blogPostContent a {
+  @apply text-primary hover:underline;
+}
+
+.blogPostContent h2 {
+  @apply text-2xl font-bold;
+}
+
+.blogPostContent ul li {
+  @apply list-disc;
+}
+
+.blogPostContent ul {
+  @apply pl-4;
+}
+
+.blogPostContent table {
+  @apply border-collapse w-full;
+}
+
+.blogPostContent table th {
+  @apply bg-slate-400 dark:bg-zinc-900;
+}
+
+.blogPostContent table td,
+.blogPostContent table th {
+  @apply border-solid border-slate-400 dark:border-zinc-900 border-[0.0625rem] text-left p-2;
+}
+
+.blogPostContent tr:nth-of-type(odd) {
+  @apply bg-slate-200 dark:bg-zinc-800;
+}
+
+.blogPostContent tr:nth-of-type(even) {
+  @apply bg-slate-300 dark:bg-zinc-700;
+}
+
+.blogPostContent img {
+  @apply max-w-full;
+}
+
+.blogPostContent blockquote {
+  @apply border-l-2 border-primary p-4 text-lg;
+}
+
+.blogPostContent p > code {
+  @apply text-red-600 bg-slate-200 dark:bg-slate-800 p-1 rounded;
+}
+
+/* Print Styles for PDF Export */
+@media print {
+  /* Hide navigation and footer elements */
+  header,
+  footer,
+  nav,
+  .posts:hover > a {
+    display: none !important;
+  }
+
+  /* Reset background colors and ensure good contrast */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure proper page breaks */
+  body {
+    margin: 0 !important;
+    padding: 20px !important;
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Optimize headings for print */
+  h1 {
+    font-size: 24pt !important;
+    margin-top: 0 !important;
+    margin-bottom: 12pt !important;
+    page-break-after: avoid !important;
+  }
+
+  h2 {
+    font-size: 18pt !important;
+    margin-top: 24pt !important;
+    margin-bottom: 8pt !important;
+    page-break-after: avoid !important;
+  }
+
+  h3 {
+    font-size: 14pt !important;
+    margin-top: 16pt !important;
+    margin-bottom: 6pt !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Optimize paragraphs and text */
+  p {
+    margin-bottom: 8pt !important;
+    orphans: 3 !important;
+    widows: 3 !important;
+  }
+
+  /* Optimize links */
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  /* Show URLs for external links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt !important;
+    color: #666 !important;
+  }
+
+  /* Optimize images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Optimize containers */
+  .generic-container,
+  .skinny-container {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Optimize grid layouts */
+  .grid {
+    display: block !important;
+  }
+
+  .lg\\:grid-cols-3 {
+    grid-template-columns: none !important;
+  }
+
+  /* Optimize blog post cards */
+  .posts > a {
+    display: block !important;
+    margin-bottom: 16pt !important;
+    padding: 12pt !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Optimize buttons/links */
+  a[href^="/"] {
+    display: inline-block !important;
+    margin-top: 8pt !important;
+    margin-bottom: 8pt !important;
+    padding: 6pt 12pt !important;
+    border: 1px solid #000 !important;
+    text-decoration: none !important;
+  }
+
+  /* Optimize company logos section */
+  .company-logos {
+    margin: 16pt 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Ensure proper spacing between sections */
+  main > div {
+    margin-bottom: 24pt !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Add page breaks where appropriate */
+  h2 {
+    page-break-before: auto !important;
+  }
+
+  /* Optimize for A4 paper */
+  @page {
+    margin: 1in !important;
+    size: A4 !important;
+  }
+
+  /* Hide hover effects and interactive elements */
+  *:hover {
+    background: transparent !important;
+    color: inherit !important;
+  }
+
+  /* Ensure text is readable */
+  .text-primary {
+    color: #000 !important;
+    font-weight: bold !important;
+  }
+
+  /* Optimize dark mode elements for print */
+  .dark\\:text-white,
+  .dark\\:bg-slate-900,
+  .dark\\:bg-slate-800,
+  .dark\\:bg-slate-700,
+  .dark\\:border-zinc-900,
+  .dark\\:border-zinc-800 {
+    color: #000 !important;
+    background: transparent !important;
+    border-color: #ccc !important;
+  }
+}

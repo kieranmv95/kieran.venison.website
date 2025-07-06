@@ -10,7 +10,6 @@ import styles from "./style.module.css";
 
 const Footer = () => (
   <footer className="py-6 generic-container mt-10">
-    <p className="mb-3">Designed and built by Kieran Venison</p>
     <nav>
       <ul className={styles.icons}>
         <li>
